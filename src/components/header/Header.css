@@ -1,0 +1,101 @@
+header{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+header nav{
+    display: flex;
+    border-radius: 50px;
+    background-color: var(--border);
+    box-shadow: 2px 2px 5px var(--border);
+}
+header .menu  , header .mood{
+    background-color: var(--border);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: var(--subtitle);
+    border: 0;
+    transition: all .7s;
+}
+.fa-sun{
+    color: orange;
+}
+header .menu:hover ,  header .mood:hover{
+    border: solid 1px tomato;
+    cursor: pointer;
+    color: var(--title);
+}
+header .menu:active ,  header .mood:active{
+    scale: .8;
+}
+header  a{
+    color: var(--title);
+    transition: all .4s;
+    opacity: .8;
+}
+header  a:hover{
+    color: var(--orange) ;
+    opacity: 1;
+
+}
+header .overlay{
+    position: fixed;
+    inset: 0;
+    background-color: rgba(128, 128, 128, 0.544);
+    z-index: 99;
+}
+header .overlay .list{
+    background-color: var(--secondary);
+    width: 90%;
+    left: 5%;
+    border-radius: 10px;
+    animation: listScale 2s 1;
+
+}
+header .overlay .list li{
+    border-bottom: solid 2px var(--border);
+    padding-bottom: 15px;
+    margin-top: 7px;
+}
+header .overlay .list ul li:last-child{
+    border: 0;
+    padding-bottom: 0;
+}
+header .close i{
+    font-size: 1.2rem;
+    transition: 1s;
+    color: var(--iconHover);
+}
+header .close i:hover{
+    cursor: pointer;
+    color: tomato;
+    rotate: 45deg;
+}
+header .menu {
+    display: none;
+}
+
+@media screen and (max-width:767px) {
+    header nav{
+        display: none;
+    }
+    header .menu{
+        display: flex;
+    }
+    header{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+}
+ @keyframes listScale {
+     0%{
+         scale: 0;
+     }
+     60%{
+         scale: 1.01;
+     }
+     100%{
+         scale: 1;
+     }
+ }

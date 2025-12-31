@@ -1,0 +1,46 @@
+.hero{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.hero img{
+width: 100px;
+height: 100px;
+border-radius: 50%;
+border: solid 1px var(--orange);
+padding: 1px;
+}
+.hero h1{
+    color: var(--title);
+    font-weight: 700;
+}
+.hero p{
+    color: var(--subtitle);
+}
+.hero a{
+    color: var(--subtitle);
+    font-size: 20px;
+}
+.social a{
+    transition: .4s;
+}
+.social a:hover{
+    color: var(--iconHover);
+    scale: .8;
+}
+
+
+@media (max-width:400px) {
+
+   
+    .hero{
+        margin-top: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .hero h1{
+        font-size: 22px;
+    }
+    .hero p{
+        font-size: 14px;
+    }
+}

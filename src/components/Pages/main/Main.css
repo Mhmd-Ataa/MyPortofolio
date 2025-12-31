@@ -1,0 +1,101 @@
+
+.main ul li{
+    background-color: rgba(36,37,46,1);
+    border-radius: 5px;
+    border: solid 1px var(--border);
+    transition: .4s;
+    opacity: .6;
+}
+.main ul li:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.main ul li.active{
+    border: solid 1px var(--orange);
+    opacity: 1;
+}
+.light .main ul li.active{
+    border: 0;
+    box-shadow: 5px 5px 5px gray;
+}
+.main .roww{
+    column-gap: 40px;
+}
+.main .carrd{
+    border: solid 1px rgba(93 ,188 ,152 , .1);
+    border-radius: 10px;
+    transition: .4s;
+
+}
+
+
+.light .main .carrd{
+    border: 0;
+    box-shadow: 1px 1px 7px gray ,-1px -1px 7px gray ;
+}
+.light .main .carrd:hover{
+    border: 0;
+}
+.main .carrd img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+height: 200px;
+}
+.main .carrd:hover{
+    border: solid 1px var(--orange);
+    border-radius: 10px;
+    rotate: 1deg;
+    scale: .99;
+}
+.info p{
+    font-size: 15px;
+    color: var(--subtitle);
+}
+.info h4{
+    text-transform: capitalize;
+    letter-spacing: .6px;
+    color: var(--title);
+
+}
+.icons a{
+    color: var(--subtitle);
+}
+.icons a:hover{
+    color: var(--title);
+}
+.icons .links2:hover i{
+    transform: translateX(2px);
+}
+
+@media screen and (max-width:765px) {
+    .main ul{
+        display: flex;
+        gap: 6px;
+    }
+}
+@media screen and (max-width:550px) {
+    .main ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 6px;
+    }
+    .main ul li {
+        width: 30%;
+        margin-bottom: -15px !important;
+        font-size: 13px;
+    }
+    .main .carrd{
+        margin-top: 40px !important;
+
+    }
+}
+@media screen and (max-width:360px) {
+   
+    .main ul li {
+        width: 40%;
+        margin-bottom: -15px !important;
+    }
+}
+
+
