@@ -8,6 +8,7 @@ import Main from './components/Pages/main/Main';
 import Resume from './components/Pages/Resume/Resume';
 
 
+
 function App() {
 
  
@@ -19,7 +20,9 @@ function App() {
         { index: true, element: <Home /> },
         { path: "contact", element: <Contacts /> },
         { path: "Projects", element: <Main/> },
-        { path: "Resume", element: <Resume/> }
+        { path: "Resume", element: <Resume/> },
+        
+        ,
       ]
     }
 
