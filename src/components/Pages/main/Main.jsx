@@ -234,7 +234,7 @@ let Projects = [
     category: ["react"],
     about:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum, quisquam quia laboriosam consectetur dolores voluptatum.",
-    link: "https://nour-store-git-main-mhmd-ataas-projects.vercel.app/",
+    link: "https://nour-store-pi.vercel.app",
     gitHub: "https://github.com/Mhmd-Ataa/Nour-Store/tree/main/frontend",
   },
 ];
