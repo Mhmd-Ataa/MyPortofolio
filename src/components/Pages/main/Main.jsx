@@ -20,6 +20,8 @@ import img17 from "../../../Asset/quizjs.png";
 import img18 from "../../../Asset/passjs.png";
 import img19 from "../../../Asset/wethear.png";
 import img20 from "../../../Asset/todo.png";
+import img21 from "../../../Asset/Capture.PNG";
+
 
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -187,7 +189,7 @@ let Projects = [
   },
   {
     id: 43,
-    title: "Features",
+    title: "furniture",
     imgPath: `${img6}`,
     category: ["react"],
     about:
@@ -224,6 +226,16 @@ let Projects = [
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum, quisquam quia laboriosam consectetur dolores voluptatum.",
     link: "https:https://mhmd-ataa.github.io/Edusity/",
     gitHub: "https://github.com/Mhmd-Ataa/Edusity.git",
+  },
+  {
+    id: 47,
+    title: "official Nour Store Brand (ui/ux and fullstack)",
+    imgPath:`${img21}`,
+    category: ["react"],
+    about:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum, quisquam quia laboriosam consectetur dolores voluptatum.",
+    link: "https://nour-store-git-main-mhmd-ataas-projects.vercel.app/",
+    gitHub: "https://github.com/Mhmd-Ataa/Nour-Store/tree/main/frontend",
   },
 ];
 const Main = () => {
